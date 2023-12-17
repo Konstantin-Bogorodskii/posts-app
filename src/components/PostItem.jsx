@@ -1,12 +1,14 @@
-const PostItem = ({ post }) => {
+const PostItem = ({ post, postIndex, removePost }) => {
 	return (
-		<div className='post'>
-			<div className='post_content'>
-				<h3>{post.title}</h3>
+		<div className="post">
+			<div className="post_content">
+				<h3>
+					{postIndex}. {post.title}
+				</h3>
 				<p>{post.description}</p>
 			</div>
-			<div className='post_buttons'>
-				<button>Удалить</button>
+			<div className="post_buttons">
+				<button onClick={() => removePost(post.id)}>Удалить</button>
 			</div>
 		</div>
 	);

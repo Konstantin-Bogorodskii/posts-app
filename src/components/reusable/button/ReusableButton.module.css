@@ -1,0 +1,14 @@
+.button {
+    padding: 5px 15px;
+    color: cadetblue;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid cadetblue;
+    cursor: pointer;
+}
+
+.button:disabled {
+    border: 1px solid darkgrey;
+    color: darkgrey;
+    cursor: not-allowed;
+}
